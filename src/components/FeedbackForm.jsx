@@ -34,6 +34,7 @@ function FeedbackForm() {
         </div>
         {message && <div className='message'>{message}</div>}
       </form>
+      
     </Card>
   )
 }
