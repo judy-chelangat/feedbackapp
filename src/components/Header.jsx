@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+// you have to import proptypes 
 
 function Header({bgColor,textColor,text}) {
     const headerStyles ={
@@ -21,7 +21,7 @@ Header.defaultProps = {
     bgColor: 'rgba(0,0,0,0.4)',
     textColor: '#ff6a95',
   }
-  
+  //typechecking for the props 
   Header.propTypes = {
     text: PropTypes.string,
     bgColor: PropTypes.string,
