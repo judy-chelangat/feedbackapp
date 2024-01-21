@@ -6,11 +6,12 @@ import FeedbackStats from "./components/FeedbackStats"
 import FeedbackForm from "./components/FeedbackForm"
 
 function App(){
-    const [feedback,setFeedback]=useState(FeedbackData)
-
+    const [feedback,setFeedback]=useState(FeedbackData) //app level state
+   // function to deleted a specific data
     const deleteFeedback =(id)=>{
         setFeedback(feedback.filter((item) => item.id!=id))
     }
+    //high order array method 
      return(
         <>
         <Header/>
