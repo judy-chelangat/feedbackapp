@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Button from './shared/Button'//custom button for all components
 import RatingSelect from './RatingSelect'
 
-function FeedbackForm() {
+function FeedbackForm({handleAdd}) {
     const [text,setText]=useState('')
     const [rating,setRating]=useState(10) 
     const [btnDisabled, setBtnDisabled] = useState(true) //button is disabled by default unless you type 10 characters
@@ -26,11 +26,24 @@ function FeedbackForm() {
         }
      setText(e.target.value)
     }
+
+    //function for submiting
+    const handleSubmit =(e) =>{
+      e.preventDefault()
+      if(text.trim().length > 10){
+        const newFeedback ={
+          text:text,
+          rating:rating
+        }
+        //console.log(newFeedback)
+        handleAdd(newFeedback)
+      }
+    }
   return (
     <Card>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2>How would you rate your service with us?</h2>
-        <RatingSelect/>
+        <RatingSelect select={(rating)=>setRating(rating)}/>
         <div className="input-group">
             <input onChange={handleTextChange} type="text" placeholder='write a review' value={text}/>
             <Button type="submit" isDisabled={btnDisabled}>Send</Button>

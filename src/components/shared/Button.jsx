@@ -8,7 +8,7 @@ function Button({children,version,type,isDisabled}) {
     </button>
   )
 }
-
+//default prop types if nothing is passed in
 Button.defaultProps ={
     version:"primary",
     type:'button',
