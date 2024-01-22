@@ -1,3 +1,19 @@
+## Feedback-app
+It allows users to add, update and delete feedback. It uses a mock REST api with json-server.
+
+This project goes over all of the fundamentals of React ...
+
+Components
+JSX
+Props (proptypes, defaultprops, etc)
+State (Component & App Level)
+Styling
+Handling Events
+Lists & Keys
+Forms
+Context API
+HTTP Requests
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +84,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## author
+judy chelangat
+
+## license 
+This project is licensed under the MIT license
