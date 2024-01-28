@@ -5,9 +5,8 @@ This project goes over all of the fundamentals of React ...
 
 Components
 JSX
-Props (proptypes, defaultprops, etc)
+Props (proptypes, defaultprops)
 State (Component & App Level)
-Styling
 Handling Events
 Lists & Keys
 Forms
